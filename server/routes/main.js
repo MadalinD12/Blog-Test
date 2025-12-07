@@ -35,9 +35,6 @@ router.get('', async(req, res) => {
         nextPage: hasNextPage ? nextPage : null,
         currentRoute: '/'
     });
-
-    
-    res.render('index', { locals, data });
     }catch(error){
         console.log(error);
     }
